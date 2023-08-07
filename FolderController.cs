@@ -14,7 +14,7 @@ namespace Presentation.AltControllers
 
         [HttpGet]
         [Route(nameof(GetFoldersForUser))]
-        public async Task<IActionResult> GetFoldersForUser(Guid userId, CancellationToken cancellation)
+        public async Task<IActionResult> GetCurrentUserFolders(CancellationToken cancellation)
         {
             throw new NotImplementedException();
         }
