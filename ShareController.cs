@@ -13,14 +13,14 @@ namespace Presentation.Controllers
         {
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route(nameof(GetShares))]
         public async Task<IActionResult> GetShares(CancellationToken cancellation)
         {
             throw new NotImplementedException();
         }
 
-        [HttpPost]
+        [HttpDelete]
         [Route(nameof(GetShares))]
         public async Task<IActionResult> UnlinkShare(ObjectIdAndCreatedByUserIdDTO shareIdPair, CancellationToken cancellation)
         {
