@@ -1,4 +1,11 @@
+using Application.Commands;
+using Domain.Shared.Entities;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using Presentation.Abstractions;
 
+namespace Presentation.Controllers
+{
     [Route("api/[controller]")]
     public sealed class ShareController : ApiController
     {
@@ -66,3 +73,4 @@
             public ObjectIdAndCreatedByUserIdDTO[] MediaDetails { get; set; }
         }
     }
+}
